@@ -1,0 +1,23 @@
+[
+    {
+        "name": "rd/restClient",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "vendor/restClient",
+            "reference": "3aa5ada326ceb80f5a9b2f87a10edaf58407ccde",
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "RestClient\\": "src/"
+            }
+        },
+        "license": [
+            "Open Source"
+        ]
+    }
+]

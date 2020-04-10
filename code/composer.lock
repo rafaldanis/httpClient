@@ -1,0 +1,39 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "bafa98573c441d4da9bec36fffd41a70",
+    "packages": [
+        {
+            "name": "rd/restClient",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "vendor/restClient",
+                "reference": "3aa5ada326ceb80f5a9b2f87a10edaf58407ccde",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RestClient\\": "src/"
+                }
+            },
+            "license": [
+                "Open Source"
+            ]
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "rd/restclient": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

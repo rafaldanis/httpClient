@@ -1,0 +1,15 @@
+{
+  "name": "rd/restClient",
+  "description": "",
+  "type": "library",
+  "license": "Open Source",
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "RestClient\\": "src/"
+    }
+  }
+}
