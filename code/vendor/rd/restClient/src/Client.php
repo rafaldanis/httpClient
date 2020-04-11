@@ -2,8 +2,6 @@
 
 namespace RestClient;
 
-require_once(__DIR__ . '/../vendor/autoload.php');
-
 use RestClient\Component\Http\Request;
 use RestClient\Component\Http\Response;
 use RestClient\ClientInterface;
@@ -14,6 +12,9 @@ use RestClient\Component\Authorization\AuthorizationInterface;
  * Client
  * 
  * restClient, klasa wywoływana przez kod kliencki
+ * 
+ * Służy do połączeń http z api
+ * 
  */
 class Client implements ClientInterface
 {
@@ -89,8 +90,8 @@ class Client implements ClientInterface
      *
      * metoda GET - pobiera informacje
      * 
-     * @param  mixed $uri
-     * @return void
+     * @param  string $uri
+     * @return Response
      */
     public function get(string $uri = null) : Response
     {
@@ -106,7 +107,7 @@ class Client implements ClientInterface
      * 
      * @param  string $uri
      * @param  array $data
-     * @return void
+     * @return Response
      */
     public function post(string $uri = null, array $data) : Response
     {
@@ -121,7 +122,7 @@ class Client implements ClientInterface
      * 
      * @param  mixed $uri
      * @param  mixed $data
-     * @return void
+     * @return Response
      */
     public function put(string $uri = null, array $data) : Response
     {
@@ -136,7 +137,7 @@ class Client implements ClientInterface
      * 
      * @param  mixed $uri
      * @param  mixed $data
-     * @return void
+     * @return Response
      */
     public function delete(string $uri = null) : Response
     {
